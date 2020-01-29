@@ -11,13 +11,15 @@
 }
 
 #city-input {
-  padding: 8px;
+  padding: 16px;
   background-color: #E6E6E6;
   border: 0px solid;
+  color: black;
 }
 
 .btn {
-  padding: 8px;
+  padding: 16px;
   background-color: #E6E6E6;
   border: 0px solid;
+  color: black;
 }
