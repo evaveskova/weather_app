@@ -15,7 +15,10 @@ const getData = (e) => {
       cityHeader.textContent = city;
       cityResult.appendChild(cityHeader);
 
-
+      const weatherType = document.getElementById('weather-type');
+      const weatherDescription = document.createElement('H3');
+      weatherDescription.textContent = `${weather[0].main}`;
+      weatherType.appendChild(weatherDescription);
     })
 }
 
