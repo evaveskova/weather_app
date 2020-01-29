@@ -10,6 +10,27 @@
   opacity: 70%;
 }
 
+#city-name {
+  font-size: 43px;
+  color: #E6E6E6;
+}
+
+#weather-description {
+  display: inline-flex;
+  margin-top: -30px;
+}
+
+#weather-description h3 {
+  margin-right: 7px;
+  font-size: 40px;
+  color: #E6E6E6;
+  align-items: center;
+}
+
+#input-form {
+  padding: 20px;
+}
+
 #city-input {
   padding: 16px;
   background-color: #E6E6E6;
@@ -22,4 +43,14 @@
   background-color: #E6E6E6;
   border: 0px solid;
   color: black;
+}
+
+.result-hidden {
+  visibility: hidden;
+  width: 0px;
+  height: 0px;
+}
+
+.result-visible {
+  visibility: visible;
 }
