@@ -19,6 +19,11 @@ const getData = (e) => {
       const weatherDescription = document.createElement('H3');
       weatherDescription.textContent = `${weather[0].main}`;
       weatherType.appendChild(weatherDescription);
+
+      const weatherTemperature = document.getElementById('weather-temp');
+      const temperatureResult = document.createElement('H3');
+      temperatureResult.textContent = `${main.temp}°C`;
+      weatherTemperature.appendChild(temperatureResult);
     })
 }
 
