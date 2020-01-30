@@ -11,7 +11,6 @@ const getData = (e) => {
   fetch(url)
     .then( response => response.json())
     .then( ({ weather, main}) => {
-      console.log(weather, main);
       const result = document.getElementById('result');
       result.classList.remove('result-hidden');
       result.classList.add('result-visible');
