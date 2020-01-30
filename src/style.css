@@ -1,3 +1,8 @@
+body {
+  background: #000000 url('Sunny.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
 .weather-area {
   position: absolute;
   top: 50%;
