@@ -1,5 +1,5 @@
 import './style.css';
-import getData from './api.js';
+import getData from './api';
 
 
 const inputForm = document.getElementById('input-form');

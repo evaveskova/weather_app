@@ -1,7 +1,7 @@
 {
   "name": "weather_app",
   "version": "1.0.0",
-  "description": "",
+  "description": "The aim of this project was to create a weather app where users can input a city and view the weather type and temperature of that city. The original project requirements can be found on [The Odin Project](https://www.theodinproject.com/courses/javascript/lessons/weather-app).",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
