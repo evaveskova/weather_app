@@ -34,6 +34,15 @@ const getData = (e) => {
       weatherTemperature.appendChild(temperatureResult);
 
       document.getElementById('city-input').value = '';
+    })
+    .catch((err) => {
+      const cityResult = document.getElementById('city-name');
+      cityResult.textContent = '';
+      const cityError = document.createElement('P');
+      cityError.textContent = 'Please input a valid city.';
+      cityResult.appendChild(cityError);
+
+      document.getElementById('city-input').value = '';
     });
   return true;
 };

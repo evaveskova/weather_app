@@ -32,6 +32,12 @@ body {
   align-items: center;
 }
 
+p {
+  font-size: 30px;
+  text-align: center;
+  font-weight: bold;
+}
+
 #input-form {
   padding: 20px;
 }
