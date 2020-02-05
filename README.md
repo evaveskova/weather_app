@@ -1,7 +1,7 @@
 # Weather App
 The aim of this project was to create a weather app where users can input a city and view the weather type and temperature of that city. The original project requirements can be found on [The Odin Project](https://www.theodinproject.com/courses/javascript/lessons/weather-app).
 
-![screenshot](./weather_app.png)
+![screenshot](./src/weather_app.png)
 
 This app uses the OpenWeatherMap API which can be found [here](https://openweathermap.org/current).
 
