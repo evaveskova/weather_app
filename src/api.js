@@ -3,8 +3,11 @@ import setBackground from './weather';
 const getData = (e) => {
   e.preventDefault();
   const city = document.getElementById('city-input').value;
+  const tempUnit = document.getElementById('temp-dropdown').checked ? 'imperial' : 'metric';
+  const unitChoice = document.getElementById('unit-choice');
+  unitChoice.textContent = `Change to ${tempUnit === 'imperial' ? 'Celsius' : 'Farhenheit'}`;
   const API_KEY = '2b973a9ddd64acbb314bdaa3d2f4ec6b';
-  const url = `https://cors-anywhere.herokuapp.com/http://api.openweathermap.org/data/2.5/weather?q=${city}&APPID=${API_KEY}&units=metric`;
+  const url = `https://cors-anywhere.herokuapp.com/http://api.openweathermap.org/data/2.5/weather?q=${city}&APPID=${API_KEY}&units=${tempUnit}`;
   if (city === '') {
     return false;
   }
@@ -30,19 +33,19 @@ const getData = (e) => {
       const weatherTemperature = document.getElementById('weather-temp');
       weatherTemperature.textContent = '';
       const temperatureResult = document.createElement('H3');
-      temperatureResult.textContent = `${main.temp}°C`;
+      if (tempUnit === 'metric') {
+        temperatureResult.textContent = `${main.temp}°C`;
+      } else {
+        temperatureResult.textContent = `${main.temp}°F`;
+      }
       weatherTemperature.appendChild(temperatureResult);
-
-      document.getElementById('city-input').value = '';
     })
-    .catch((err) => {
+    .catch(() => {
       const cityResult = document.getElementById('city-name');
       cityResult.textContent = '';
       const cityError = document.createElement('P');
       cityError.textContent = 'Please input a valid city.';
       cityResult.appendChild(cityError);
-
-      document.getElementById('city-input').value = '';
     });
   return true;
 };
