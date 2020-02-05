@@ -17,7 +17,7 @@ To view the live link, [click here](https://rawcdn.githack.com/evaveskova/weathe
 ### 👤 Author
 
 * Github: [@evaveskova](https://github.com/evaveskova)
-* Linkedin: [Eva Veskova Jackson](https://linkedin.com/evaveskova)
+* Linkedin: [Eva Veskova Jackson](https://www.linkedin.com/in/evaveskova/)
 
 ### How to Use
 * Visit the live link or clone the project in the terminal by running
