@@ -1,0 +1,147 @@
+body {
+  background: #000000 url('Sunny.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+.weather-area {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #8E8E8E;
+  padding: 2rem;
+  border: 0px;
+  border-radius: 8px;
+  opacity: 70%;
+}
+
+#city-name {
+  font-size: 43px;
+  color: #E6E6E6;
+}
+
+#weather-description {
+  display: inline-flex;
+  margin-top: -30px;
+}
+
+#weather-description h3 {
+  margin-right: 10px;
+  font-size: 40px;
+  color: #E6E6E6;
+  align-items: center;
+}
+
+#result p {
+  font-size: 30px;
+  text-align: center;
+  font-weight: bold;
+}
+
+#input-form {
+  padding: 20px;
+}
+
+#city-input {
+  padding: 16px;
+  background-color: #E6E6E6;
+  border: 0px solid;
+  color: black;
+}
+
+.btn {
+  padding: 16px;
+  background-color: #E6E6E6;
+  border: 0px solid;
+  color: black;
+}
+
+.result-hidden {
+  visibility: hidden;
+  width: 0px;
+  height: 0px;
+}
+
+.result-visible {
+  visibility: visible;
+}
+
+#unit-area {
+  text-align: center;
+}
+
+#unit-area p {
+  color: #E6E6E6;
+  padding: 6px;
+}
+
+.switch {
+  margin: 0 auto;
+  position: relative;
+  display: block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #E6E6E6;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #35D5A9;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #35D5A9;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+@media only screen and (max-width: 780px) {
+  #city-input {
+    width: 15rem;
+  }
+
+  .btn {
+    width: 17rem;
+    margin-top: 3px;
+  }
+}
