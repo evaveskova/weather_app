@@ -1,0 +1,11 @@
+linters:
+  eslint:
+    config: './eslint.config'
+
+files:
+  ignore:
+      - 'dist/*'
+      - 'src/index.js'
+      - 'webpack.config.js'
+fixers:
+    enable: true

@@ -1,0 +1,33 @@
+{
+  "name": "weather_app",
+  "version": "1.0.0",
+  "description": "The aim of this project was to create a weather app where users can input a city and view the weather type and temperature of that city. The original project requirements can be found on [The Odin Project](https://www.theodinproject.com/courses/javascript/lessons/weather-app).",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack --mode development",
+    "build": "webpack --mode production",
+    "start": "webpack-dev-server --mode development --open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/evaveskova/weather_app.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/evaveskova/weather_app/issues"
+  },
+  "homepage": "https://github.com/evaveskova/weather_app#readme",
+  "devDependencies": {
+    "css-loader": "^3.4.2",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.20.0",
+    "file-loader": "^5.0.2",
+    "style-loader": "^1.1.3",
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10"
+  },
+  "dependencies": {},
+  "keywords": []
+}

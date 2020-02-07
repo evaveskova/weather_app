@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Weather App</title>
+  </head>
+  <body id="body">
+    <div class="container">
+      <div class="weather-area">
+        <div id="result" class="result-hidden">
+          <div id="city-name"></div>
+
+          <div id="weather-description">
+            <div id="weather-type"></div>
+            <div id="weather-temp"></div>
+          </div>
+        </div>
+
+        <form id="input-form" action="#">
+          <input id="city-input" placeholder="Enter a city" />
+          <input id="submit-btn" class="btn" type="submit" value="Submit" />
+        </form>
+
+        <div id="unit-area">
+          <p id="unit-choice">Change to Farhenheit</p>
+          <label class="switch">
+            <input id="temp-dropdown" type="checkbox" />
+            <span class="slider round"></span>
+          </label>
+        </div>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
