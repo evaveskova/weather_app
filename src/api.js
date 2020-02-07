@@ -1,6 +1,6 @@
 import setBackground from './weather';
 
-const getData = async e => {
+const getData = async (e) => {
   e.preventDefault();
   const city = document.getElementById('city-input').value;
   const tempUnit = document.getElementById('temp-dropdown').checked
